@@ -10157,10 +10157,12 @@
         }
       }
 
+      var started_anim = false;
       var counter = 0;
       document.onkeydown = function (e) {
-        if(counter===0 && e.keyCode === 37) return;
-        if(counter===all_sub_els.length  && e.keyCode === 39) return;
+        if (started_anim) return;
+        if (counter===0 && e.keyCode === 37) return;
+        if (counter===all_sub_els.length  && e.keyCode === 39) return;
 
         if(e.keyCode === 37) {
           counter --;
@@ -10173,11 +10175,30 @@
         }
       };
       document.onclick = function (e) {
+        if (started_anim) return;
+
+        if(counter===all_sub_els.length-1) {
+          counter = 0;
+          for(var i=0; i<all_els.length; i++) {
+            var b = all_els[i].children;
+            for(var j=0; j<b.length; j++) {
+              all_sub_els = all_sub_els.concat(b[j]);
+              b[j].style.display = 'none';
+            }
+          }
+        }
+
+        started_anim = true;
+
         for(var i=0; i<all_sub_els.length; i++) {
-          setTimeout(function() {
-            all_sub_els[counter].style.display = 'block';
-            counter ++;
-          }, 60*i);
+          setTimeout(function(curr) {
+            console.log(curr);
+            all_sub_els[curr].style.display = 'block';
+            counter = curr;
+
+            if(counter === all_sub_els.length-1) started_anim = false;
+          }, 40*i, i);
+
         }
 
       };

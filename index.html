@@ -10167,59 +10167,20 @@
           all_sub_els[counter].style.display = 'none';
         }
         if(e.keyCode === 39) {
-          console.log(all_sub_els[counter]);
+          // console.log(all_sub_els[counter]);
           all_sub_els[counter].style.display = 'block';
           counter ++;
         }
-
+      };
+      document.onclick = function (e) {
+        for(var i=0; i<all_sub_els.length; i++) {
+          setTimeout(function() {
+            all_sub_els[counter].style.display = 'block';
+            counter ++;
+          }, 60*i);
+        }
 
       };
-      // for(var i=0; i<d.length; i++) {
-      //   var b = d[i].children;
-      //   for(var j=0; j<b.length; j++) {
-      //     b[j].style.display = 'none';
-      //   }
-      // }
-      // for(var i=0; i<d.length; i++) {
-      //   var b = d[i].children;
-      //   for(var j=0; j<b.length; j++) {
-      //     b[j].style.display = 'none';
-      //   }
-      // }
-
-      // for(var i=0; i<d.length; i++) {
-      //   var b = d[i].children;
-      //   for(var j=0; j<b.length; j++) {
-      //
-      //     setTimeout( function(test) {
-      //       test.style.display = 'block';
-      //     }, 50*j*i, b[j]);
-      //     counter ++;
-      //   }
-      // }
-      //
-      //
-      // for(var i=0; i<d.length; i++) {
-      //   var b = d[i].children;
-      //   for(var j=0; j<b.length; j++) {
-      //
-      //     setTimeout( function(test) {
-      //       test.style.display = 'block';
-      //     }, (counter*50) + (50*j*i), b[j]);
-      //     counter ++;
-      //   }
-      // }
-      //
-      //
-      // for(var i=0; i<d.length; i++) {
-      //   var b = d[i].children;
-      //   for(var j=0; j<b.length; j++) {
-      //
-      //     setTimeout( function(test) {
-      //       test.style.display = 'block';
-      //     }, (counter*50) + (50*j*i), b[j]);
-      //   }
-      // }
     </script>
 
   </body>

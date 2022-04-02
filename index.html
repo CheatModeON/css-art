@@ -68,7 +68,7 @@
         height: 600px;
         /* background-color: var(--bg-color); */
       }
-      .main, .face-extras {
+      .main, .face-extras, .final-extras {
         position: absolute;
         width: 800px;
         height: 600px;
@@ -82,6 +82,9 @@
 
       .main {
         z-index: 9999;
+      }
+      .final-extras {
+        z-index: 99999;
       }
       .head-fill {
         z-index:103;
@@ -100,10 +103,12 @@
         drop-shadow: 0 0 0.1em rgba(0,0,0,1);
       }
       .body-fill, .hair-fill, .clothes-fill, .head-fill, .clothes-fill-out, .shadows {
-        /* display:none; */
         position: absolute;
         width: 800px;
         height: 600px;
+      }
+      .hair-fill {
+        /* display:none; */
       }
       .head-outline, .eyes, .mouth, .nose, .ears, .brows, .hair, .neck, .hands, .clothes {
         position: absolute;
@@ -2512,7 +2517,7 @@
       .hair-filler1 {
         position: absolute;
         border-radius: 100%;
-        background: var(--hair-light);
+        background: var(--hair-dark);
         width: 77px;
         height: 139px;
         transform: rotate(275deg);
@@ -2522,7 +2527,7 @@
       .hair-filler2 {
         position: absolute;
         border-radius: 100%;
-        background: var(--hair-light);
+        background: var(--hair-dark);
         width: 82px;
         height: 23px;
         transform: rotate(47deg);
@@ -2532,7 +2537,7 @@
       .hair-filler3 {
         position: absolute;
         border-radius: 20%;
-        background: var(--hair-light);
+        background: var(--hair-dark);
         width: 100px;
         height: 65px;
         transform: rotate(47deg);
@@ -2542,7 +2547,7 @@
       .hair-filler4 {
         position: absolute;
         border-radius: 0;
-        background: var(--hair-light);
+        background: var(--hair-dark);
         width: 106px;
         height: 23px;
         transform: rotate(47deg);
@@ -2552,7 +2557,7 @@
       .hair-filler5 {
         position: absolute;
         border-radius: 50%;
-        background: var(--hair-light);
+        background: var(--hair-dark);
         width: 137px;
         height: 47px;
         transform: rotate(314deg);
@@ -2567,7 +2572,7 @@
         transform: rotate(257deg);
         top: 154px;
         left: 326px;
-        box-shadow: 55px -10px var(--hair-light);
+        box-shadow: 55px -10px var(--hair-dark);
       }
       .hair-filler7 {
         position: absolute;
@@ -2577,7 +2582,7 @@
         transform: rotate(265deg);
         top: 171px;
         left: 347px;
-        box-shadow: 55px -7px var(--hair-light);
+        box-shadow: 55px -7px var(--hair-dark);
       }
       .hair-filler8 {
         position: absolute;
@@ -2587,7 +2592,7 @@
         transform: rotate(280deg);
         top: 213px;
         left: 337px;
-        box-shadow: 67px -9px var(--hair-light);
+        box-shadow: 67px -9px var(--hair-dark);
       }
       .hair-filler9 {
         position: absolute;
@@ -2597,7 +2602,7 @@
         transform: rotate(314deg);
         top: 162px;
         left: 288px;
-        box-shadow: 44px -10px var(--hair-light);
+        box-shadow: 44px -10px var(--hair-dark);
       }
       .hair-filler10 {
         position: absolute;
@@ -2607,7 +2612,7 @@
         transform: rotate(315deg);
         top: 142px;
         left: 319px;
-        box-shadow: 55px -10px var(--hair-light);
+        box-shadow: 55px -10px var(--hair-dark);
       }
       .hair-filler11 {
         position: absolute;
@@ -2617,7 +2622,7 @@
         transform: rotate(281deg);
         top: 180px;
         left: 441px;
-        box-shadow: 14px 11px var(--hair-light);
+        box-shadow: 14px 11px var(--hair-dark);
       }
       .hair-filler12 {
         position: absolute;
@@ -2627,7 +2632,7 @@
         transform: rotate(293deg);
         top: 232px;
         left: 481px;
-        box-shadow: 19px 3px var(--hair-light);
+        box-shadow: 19px 3px var(--hair-dark);
       }
       .hair-filler13 {
         position: absolute;
@@ -2637,7 +2642,7 @@
         transform: rotate(244deg);
         top: 232px;
         left: 303px;
-        box-shadow: 19px -7px var(--hair-light);
+        box-shadow: 19px -7px var(--hair-dark);
       }
       .hair-filler14 {
         position: absolute;
@@ -2647,7 +2652,7 @@
         transform: rotate(184deg);
         top: 134px;
         left: 549px;
-        box-shadow: 77px 4px var(--hair-light);
+        box-shadow: 77px 4px var(--hair-dark);
       }
       .hair-filler15 {
         position: absolute;
@@ -2657,7 +2662,7 @@
         transform: rotate(160deg);
         top: 141px;
         left: 544px;
-        box-shadow: 39px 6px var(--hair-light);
+        box-shadow: 39px 6px var(--hair-dark);
       }
       .hair-filler16 {
         position: absolute;
@@ -2667,7 +2672,7 @@
         transform: rotate(162deg);
         top: 142px;
         left: 540px;
-        box-shadow: 39px 6px var(--hair-light);
+        box-shadow: 39px 6px var(--hair-dark);
       }
       .hair-filler17 {
         position: absolute;
@@ -2677,7 +2682,7 @@
         transform: rotate(167deg);
         top: 138px;
         left: 552px;
-        box-shadow: 27px 10px var(--hair-light);
+        box-shadow: 27px 10px var(--hair-dark);
       }
       .hair-filler18 {
         position: absolute;
@@ -2687,7 +2692,7 @@
         transform: rotate(10deg);
         top: 145px;
         left: 558px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
         clip-path: polygon(5% 28%, 17% 59%, 57% 18%);
       }
       .hair-filler19 {
@@ -2698,7 +2703,7 @@
         transform: rotate(195deg);
         top: 134px;
         left: 175px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
         clip-path: polygon(22% 18%, 12% 68%, 55% 18%);
       }
       .hair-filler20 {
@@ -2709,7 +2714,7 @@
         transform: rotate(192deg);
         top: 192px;
         left: 214px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
         clip-path: polygon(16% 14%, 14% 68%, 56% 12%);
       }
       .hair-filler21 {
@@ -2720,7 +2725,7 @@
         transform: rotate(192deg);
         top: 224px;
         left: 266px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
         clip-path: polygon(17% 13%, 30% 33%, 58% 12%);
       }
       .hair-filler22 {
@@ -2731,7 +2736,7 @@
         transform: rotate(16deg);
         top: 227px;
         left: 525px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
         clip-path: polygon(16% 14%, 14% 42%, 56% 12%);
       }
       .hair-filler23 {
@@ -2742,7 +2747,7 @@
         transform: rotate(10deg);
         top: 253px;
         left: 511px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
         clip-path: polygon(21% 15%, 10% 67%, 59% 12%);
       }
       .hair-filler24 {
@@ -2753,7 +2758,7 @@
         transform: rotate(21deg);
         top: 184px;
         left: 206px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
         clip-path: polygon(6% 1%, 1% 49%, 16% 49%);
       }
       .hair-filler25 {
@@ -2763,7 +2768,7 @@
         transform: rotate(172deg);
         top: 155px;
         left: 271px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
       }
       .hair-filler26 {
         position: absolute;
@@ -2773,7 +2778,7 @@
         transform: rotate(210deg);
         top: 84px;
         left: 250px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
         clip-path: polygon(16% 14%, 34% 68%, 56% 12%);
       }
       .hair-filler27 {
@@ -2784,7 +2789,7 @@
         transform: rotate(117deg);
         top: 194px;
         left: 460px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
         clip-path: polygon(4% 0%, 4% 98%, 46% 52%);
       }
       .hair-filler28 {
@@ -2795,7 +2800,7 @@
         transform: rotate(88deg);
         top: 168px;
         left: 512px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
         clip-path: polygon(16% 14%, 14% 68%, 56% 12%);
       }
       .hair-filler29 {
@@ -2806,7 +2811,7 @@
         transform: rotate(192deg);
         top: 206px;
         left: 230px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
         clip-path: polygon(1% 31%, 25% 96%, 74% 32%);
       }
       .hair-filler30 {
@@ -2817,7 +2822,7 @@
         transform: rotate(7deg);
         top: 221px;
         left: 283px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
         clip-path: polygon(18% 2%, 16% 68%, 56% 12%);
       }
       .hair-filler31 {
@@ -2828,7 +2833,7 @@
         transform: rotate(251deg);
         top: 174px;
         left: 376px;
-        box-shadow: 15px 10px var(--hair-light);
+        box-shadow: 15px 10px var(--hair-dark);
       }
       .hair-filler32 {
         position: absolute;
@@ -2838,7 +2843,7 @@
         transform: rotate(211deg);
         top: 127px;
         left: 420px;
-        box-shadow: 9px 27px var(--hair-light);
+        box-shadow: 9px 27px var(--hair-dark);
       }
       .hair-filler33 {
         position: absolute;
@@ -2848,7 +2853,7 @@
         transform: rotate(192deg);
         top: 174px;
         left: 398px;
-        box-shadow: 7px 15px var(--hair-light);
+        box-shadow: 7px 15px var(--hair-dark);
       }
       .hair-filler34 {
         position: absolute;
@@ -2858,7 +2863,7 @@
         transform: rotate(250deg);
         top: 179px;
         left: 444px;
-        box-shadow: 3px 9px var(--hair-light);
+        box-shadow: 3px 9px var(--hair-dark);
       }
       .hair-filler35 {
         position: absolute;
@@ -2868,7 +2873,7 @@
         transform: rotate(207deg);
         top: 214px;
         left: 507px;
-        box-shadow: 9px 12px var(--hair-light);
+        box-shadow: 9px 12px var(--hair-dark);
       }
       .hair-filler36 {
         position: absolute;
@@ -2878,7 +2883,7 @@
         transform: rotate(109deg);
         top: 157px;
         left: 358px;
-        box-shadow: 0px 11px var(--hair-light);
+        box-shadow: 0px 11px var(--hair-dark);
       }
       .hair-filler37 {
         position: absolute;
@@ -2888,7 +2893,7 @@
         transform: rotate(220deg);
         top: 220px;
         left: 310px;
-        box-shadow: 13px 11px var(--hair-light);
+        box-shadow: 13px 11px var(--hair-dark);
       }
       .hair-filler38 {
         position: absolute;
@@ -2898,7 +2903,7 @@
         transform: rotate(203deg);
         top: 176px;
         left: 348px;
-        box-shadow: 14px 11px var(--hair-light);
+        box-shadow: 14px 11px var(--hair-dark);
       }
       .hair-filler39 {
         position: absolute;
@@ -2908,7 +2913,7 @@
         transform: rotate(281deg);
         top: 175px;
         left: 481px;
-        box-shadow: 12px 11px var(--hair-light);
+        box-shadow: 12px 11px var(--hair-dark);
       }
       .hair-filler40 {
         position: absolute;
@@ -2918,7 +2923,7 @@
         transform: rotate(25deg);
         top: 264px;
         left: 333px;
-        box-shadow: 1px 4px var(--hair-light);
+        box-shadow: 1px 4px var(--hair-dark);
       }
       .hair-filler41 {
         position: absolute;
@@ -2928,7 +2933,7 @@
         transform: rotate(140deg);
         top: 168px;
         left: 361px;
-        box-shadow: -15px 11px var(--hair-light);
+        box-shadow: -15px 11px var(--hair-dark);
       }
       .hair-filler42 {
         position: absolute;
@@ -2938,7 +2943,7 @@
         transform: rotate(300deg);
         top: 32px;
         left: 193px;
-        box-shadow: 16px 24px var(--hair-light);
+        box-shadow: 16px 24px var(--hair-dark);
       }
       .hair-filler43{
         position: absolute;
@@ -2948,7 +2953,7 @@
         transform: rotate(243deg);
         top: 211px;
         left: 269px;
-        box-shadow: 2px 6px var(--hair-light);
+        box-shadow: 2px 6px var(--hair-dark);
       }
       .hair-filler44 {
         position: absolute;
@@ -2958,7 +2963,7 @@
         transform: rotate(44deg);
         top: 245px;
         left: 265px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
         clip-path: polygon(6% 14%, 14% 42%, 56% 12%);
       }
       .hair-filler45 {
@@ -2969,7 +2974,7 @@
         transform: rotate(37deg);
         top: 212px;
         left: 284px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
         clip-path: polygon(6% 14%, 14% 42%, 36% 12%);
       }
       .hair-filler46 {
@@ -2980,7 +2985,7 @@
         transform: rotate(43deg);
         top: 225px;
         left: 495px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
         clip-path: polygon(4% 16%, 15% 45%, 33% 14%);
       }
       .hair-filler47 {
@@ -2991,7 +2996,7 @@
         transform: rotate(65deg);
         top: 278px;
         left: 299px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
         clip-path: polygon(16% 44%, 24% 45%, 37% 11%);
       }
       .hair-filler48 {
@@ -3002,7 +3007,7 @@
         transform: rotate(287deg);
         top: 213px;
         left: 494px;
-        box-shadow: 4px 2px var(--hair-light);
+        box-shadow: 4px 2px var(--hair-dark);
       }
       .hair-filler49 {
         position: absolute;
@@ -3012,7 +3017,7 @@
         transform: rotate(172deg);
         top: 268px;
         left: 303px;
-        box-shadow: -4px 2px var(--hair-light);
+        box-shadow: -4px 2px var(--hair-dark);
       }
       .hair-filler50 {
         position: absolute;
@@ -3022,12 +3027,12 @@
         transform: rotate(212deg);
         top: 108px;
         left: 144px;
-        box-shadow: -25px 10px var(--hair-light);
+        box-shadow: -25px 10px var(--hair-dark);
       }
       .hair-filler51 {
         position: absolute;
         border-radius: 36%;
-        background: var(--hair-light);
+        background: var(--hair-dark);
         width: 91px;
         height: 159px;
         transform: rotate(299deg);
@@ -3037,7 +3042,7 @@
       .hair-filler52 {
         position: absolute;
         border-radius: 100%;
-        background: var(--hair-light);
+        background: var(--hair-dark);
         width: 91px;
         height: 183px;
         transform: rotate(338deg);
@@ -3052,7 +3057,7 @@
         transform: rotate(194deg);
         top: -2px;
         left: 90px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
         clip-path: polygon(4% 11%, 4% 80%, 54% 17%);
       }
       .hair-filler54 {
@@ -3063,7 +3068,7 @@
         transform: rotate(237deg);
         top: 5px;
         left: 272px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
         clip-path: polygon(22% 18%, 14% 68%, 53% 18%);
       }
       .hair-filler55 {
@@ -3074,7 +3079,7 @@
         transform: rotate(285deg);
         top: 34px;
         left: 329px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
         clip-path: polygon(22% 18%, 12% 68%, 55% 18%);
       }
       .hair-filler56 {
@@ -3085,7 +3090,7 @@
         transform: rotate(81deg);
         top: 111px;
         left: 506px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
         clip-path: polygon(22% 18%, 12% 68%, 55% 18%);
       }
       .hair-filler57 {
@@ -3096,7 +3101,7 @@
         transform: rotate(162deg);
         top: 57px;
         left: 169px;
-        box-shadow: 1px 4px var(--hair-light);
+        box-shadow: 1px 4px var(--hair-dark);
       }
       .hair-filler58 {
         position: absolute;
@@ -3106,7 +3111,7 @@
         transform: rotate(81deg);
         top: 272px;
         left: 349px;
-        background-color: var(--hair-light);
+        background-color: var(--hair-dark);
         clip-path: polygon(22% 18%, 12% 68%, 52% 22%);
       }
       .hair-filler59 {
@@ -3117,7 +3122,7 @@
         transform: rotate(190deg);
         top: 233px;
         left: 539px;
-        box-shadow: 8px 2px var(--hair-light);
+        box-shadow: 8px 2px var(--hair-dark);
       }
       .hair-filler60 {
         position: absolute;
@@ -3127,7 +3132,7 @@
         transform: rotate(277deg);
         top: 225px;
         left: 537px;
-        box-shadow: 2px 2px var(--hair-light);
+        box-shadow: 2px 2px var(--hair-dark);
       }
 
       .clothes-filler1 {
@@ -4095,6 +4100,26 @@
         transform: rotate(154deg);
         top: 225px;
         left: 471px;
+        border-radius: 40%;
+        background-color: var(--brows);
+      }
+      .brows-filler11 {
+        position: absolute;
+        width: 15px;
+        height: 5px;
+        transform: rotate(61deg);
+        top: 226px;
+        left: 477px;
+        border-radius: 40%;
+        background-color: var(--brows);
+      }
+      .brows-filler12 {
+        position: absolute;
+        width: 7px;
+        height: 3px;
+        transform: rotate(112deg);
+        top: 222px;
+        left: 358px;
         border-radius: 40%;
         background-color: var(--brows);
       }
@@ -6331,12 +6356,23 @@
       .r-arm-shadows24 {
         position: absolute;
         border-radius: 50%;
-        width: 14px;
-        height: 6px;
-        transform: rotate(160deg);
-        top: 447px;
-        left: 647px;
-        box-shadow: -1px -4px var(--skin03);
+        width: 58px;
+        height: 19px;
+        transform: rotate(246deg);
+        top: 505px;
+        left: 594px;
+        box-shadow: -19px -9px var(--skin06);
+        z-index: 15;
+      }
+      .r-arm-shadows26 {
+        position: absolute;
+        border-radius: 50%;
+        width: 58px;
+        height: 19px;
+        transform: rotate(267deg);
+        top: 507px;
+        left: 584px;
+        box-shadow: -24px -8px var(--skin03);
         z-index: 15;
       }
 
@@ -9547,11 +9583,705 @@
         box-shadow: -3px -1px var(--skin03);
         z-index: 14;
       }
+      .ear-shadows21 {
+        position: absolute;
+        border-radius: 50%;
+        width: 6px;
+        height: 4px;
+        transform: rotate(291deg);
+        top: 273px;
+        left: 489px;
+        box-shadow: -3px -2px var(--skin04);
+        z-index: 14;
+      }
+
+
+      .hair-shadows1 {
+        position: absolute;
+        border-radius: 50%;
+        width: 120px;
+        height: 19px;
+        transform: rotate(297deg);
+        top: 190px;
+        left: 260px;
+        box-shadow: 9px -3px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows2 {
+        position: absolute;
+        border-radius: 50%;
+        width: 85px;
+        height: 8px;
+        transform: rotate(308deg);
+        top: 185px;
+        left: 284px;
+        box-shadow: 7px -4px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows3 {
+        position: absolute;
+        border-radius: 50%;
+        width: 47px;
+        height: 3px;
+        transform: rotate(321deg);
+        top: 177px;
+        left: 321px;
+        box-shadow: 1px -1px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows4 {
+        position: absolute;
+        border-radius: 50%;
+        width: 47px;
+        height: 3px;
+        transform: rotate(317deg);
+        top: 182px;
+        left: 307px;
+        box-shadow: 1px -1px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows5 {
+        position: absolute;
+        border-radius: 50%;
+        width: 18px;
+        height: 1px;
+        transform: rotate(296deg);
+        top: 174px;
+        left: 358px;
+        box-shadow: 1px -1px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows6 {
+        position: absolute;
+        border-radius: 50%;
+        width: 36px;
+        height: 2px;
+        transform: rotate(378deg);
+        top: 193px;
+        left: 249px;
+        box-shadow: 6px -1px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows7 {
+        position: absolute;
+        border-radius: 50%;
+        width: 18px;
+        height: 3px;
+        transform: rotate(377deg);
+        top: 194px;
+        left: 262px;
+        box-shadow: 3px -2px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows8 {
+        position: absolute;
+        border-radius: 50%;
+        width: 60px;
+        height: 4px;
+        transform: rotate(8deg);
+        top: 183px;
+        left: 221px;
+        box-shadow: 11px -2px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows9 {
+        position: absolute;
+        border-radius: 50%;
+        width: 39px;
+        height: 4px;
+        transform: rotate(210deg);
+        top: 174px;
+        left: 256px;
+        box-shadow: -1px -3px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows10 {
+        position: absolute;
+        border-radius: 50%;
+        width: 39px;
+        height: 3px;
+        transform: rotate(345deg);
+        top: 179px;
+        left: 206px;
+        box-shadow: 16px -2px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows11 {
+        position: absolute;
+        border-radius: 50%;
+        width: 33px;
+        height: 2px;
+        transform: rotate(3deg);
+        top: 181px;
+        left: 218px;
+        box-shadow: 3px -2px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows12 {
+        position: absolute;
+        border-radius: 50%;
+        width: 45px;
+        height: 2px;
+        transform: rotate(333deg);
+        top: 233px;
+        left: 251px;
+        box-shadow: 3px -2px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows13 {
+        position: absolute;
+        border-radius: 50%;
+        width: 36px;
+        height: 2px;
+        transform: rotate(347deg);
+        top: 239px;
+        left: 251px;
+        box-shadow: 3px -2px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows14 {
+        position: absolute;
+        border-radius: 50%;
+        width: 36px;
+        height: 4px;
+        transform: rotate(335deg);
+        top: 236px;
+        left: 255px;
+        box-shadow: 6px -4px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows15 {
+        position: absolute;
+        border-radius: 50%;
+        width: 36px;
+        height: 4px;
+        transform: rotate(341deg);
+        top: 238px;
+        left: 253px;
+        box-shadow: 6px -4px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows16 {
+        position: absolute;
+        border-radius: 50%;
+        width: 24px;
+        height: 5px;
+        transform: rotate(249deg);
+        top: 216px;
+        left: 333px;
+        box-shadow: 6px -3px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows17 {
+        position: absolute;
+        border-radius: 50%;
+        width: 40px;
+        height: 5px;
+        transform: rotate(261deg);
+        top: 212px;
+        left: 349px;
+        box-shadow: 6px -3px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows18 {
+        position: absolute;
+        border-radius: 50%;
+        width: 40px;
+        height: 4px;
+        transform: rotate(265deg);
+        top: 210px;
+        left: 349px;
+        box-shadow: 6px -2px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows19 {
+        position: absolute;
+        border-radius: 50%;
+        width: 43px;
+        height: 6px;
+        transform: rotate(272deg);
+        top: 207px;
+        left: 349px;
+        box-shadow: 6px -2px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows20 {
+        position: absolute;
+        border-radius: 50%;
+        width: 46px;
+        height: 4px;
+        transform: rotate(291deg);
+        top: 190px;
+        left: 351px;
+        box-shadow: -1px -1px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows21 {
+        position: absolute;
+        border-radius: 50%;
+        width: 46px;
+        height: 4px;
+        transform: rotate(295deg);
+        top: 188px;
+        left: 354px;
+        box-shadow: -1px -2px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows22 {
+        position: absolute;
+        border-radius: 50%;
+        width: 35px;
+        height: 5px;
+        transform: rotate(285deg);
+        top: 199px;
+        left: 355px;
+        box-shadow: -1px -2px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows23 {
+        position: absolute;
+        border-radius: 50%;
+        width: 24px;
+        height: 5px;
+        transform: rotate(285deg);
+        top: 197px;
+        left: 360px;
+        box-shadow: -1px -4px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows24 {
+        position: absolute;
+        border-radius: 50%;
+        width: 24px;
+        height: 2px;
+        transform: rotate(295deg);
+        top: 182px;
+        left: 372px;
+        box-shadow: 3px -1px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows25 {
+        position: absolute;
+        border-radius: 50%;
+        width: 46px;
+        height: 2px;
+        transform: rotate(285deg);
+        top: 194px;
+        left: 374px;
+        box-shadow: 3px -1px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows26 {
+        position: absolute;
+        border-radius: 50%;
+        width: 8px;
+        height: 1px;
+        transform: rotate(270deg);
+        top: 216px;
+        left: 388px;
+        box-shadow: 0px -1px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows27 {
+        position: absolute;
+        border-radius: 50%;
+        width: 61px;
+        height: 4px;
+        transform: rotate(299deg);
+        top: 192px;
+        left: 392px;
+        box-shadow: -7px -2px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows28 {
+        position: absolute;
+        border-radius: 50%;
+        width: 61px;
+        height: 4px;
+        transform: rotate(289deg);
+        top: 182px;
+        left: 375px;
+        box-shadow: -7px -2px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows29 {
+        position: absolute;
+        border-radius: 50%;
+        width: 66px;
+        height: 10px;
+        transform: rotate(294deg);
+        top: 155px;
+        left: 392px;
+        box-shadow: -31px -5px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows30 {
+        position: absolute;
+        border-radius: 50%;
+        width: 65px;
+        height: 9px;
+        transform: rotate(298deg);
+        top: 162px;
+        left: 395px;
+        box-shadow: -12px -4px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows31 {
+        position: absolute;
+        border-radius: 50%;
+        width: 77px;
+        height: 9px;
+        transform: rotate(293deg);
+        top: 168px;
+        left: 388px;
+        box-shadow: -12px -3px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows32 {
+        position: absolute;
+        border-radius: 50%;
+        width: 49px;
+        height: 5px;
+        transform: rotate(73deg);
+        top: 195px;
+        left: 433px;
+        box-shadow: 8px -2px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows33 {
+        position: absolute;
+        border-radius: 50%;
+        width: 14px;
+        height: 8px;
+        transform: rotate(150deg);
+        top: 195px;
+        left: 463px;
+        box-shadow: 3px -3px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows34 {
+        position: absolute;
+        border-radius: 50%;
+        width: 32px;
+        height: 5px;
+        transform: rotate(108deg);
+        top: 213px;
+        left: 452px;
+        box-shadow: -1px -2px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows35 {
+        position: absolute;
+        border-radius: 50%;
+        width: 12px;
+        height: 3px;
+        transform: rotate(96deg);
+        top: 224px;
+        left: 458px;
+        box-shadow: -1px -2px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows36 {
+        position: absolute;
+        border-radius: 50%;
+        width: 13px;
+        height: 5px;
+        transform: rotate(96deg);
+        top: 201px;
+        left: 489px;
+        box-shadow: -4px -3px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows37 {
+        position: absolute;
+        border-radius: 50%;
+        width: 35px;
+        height: 2px;
+        transform: rotate(1deg);
+        top: 172px;
+        left: 591px;
+        box-shadow: -8px -1px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows38 {
+        position: absolute;
+        border-radius: 50%;
+        width: 31px;
+        height: 2px;
+        transform: rotate(3deg);
+        top: 168px;
+        left: 597px;
+        box-shadow: -8px -1px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows39 {
+        position: absolute;
+        border-radius: 50%;
+        width: 67px;
+        height: 3px;
+        transform: rotate(358deg);
+        top: 134px;
+        left: 570px;
+        box-shadow: -8px -1px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows40 {
+        position: absolute;
+        border-radius: 50%;
+        width: 79px;
+        height: 5px;
+        transform: rotate(360deg);
+        top: 133px;
+        left: 553px;
+        box-shadow: -12px -3px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows41 {
+        position: absolute;
+        border-radius: 50%;
+        width: 59px;
+        height: 5px;
+        transform: rotate(364deg);
+        top: 131px;
+        left: 567px;
+        box-shadow: -12px -3px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows42 {
+        position: absolute;
+        border-radius: 50%;
+        width: 72px;
+        height: 4px;
+        transform: rotate(366deg);
+        top: 68px;
+        left: 210px;
+        box-shadow: 1px -2px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows43 {
+        position: absolute;
+        border-radius: 50%;
+        width: 63px;
+        height: 4px;
+        transform: rotate(359deg);
+        top: 74px;
+        left: 172px;
+        box-shadow: 1px -2px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows44 {
+        position: absolute;
+        border-radius: 50%;
+        width: 67px;
+        height: 9px;
+        transform: rotate(359deg);
+        top: 64px;
+        left: 219px;
+        box-shadow: 1px -5px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows45 {
+        position: absolute;
+        border-radius: 50%;
+        width: 96px;
+        height: 9px;
+        transform: rotate(353deg);
+        top: 65px;
+        left: 184px;
+        box-shadow: 9px -5px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows46 {
+        position: absolute;
+        border-radius: 50%;
+        width: 96px;
+        height: 9px;
+        transform: rotate(349deg);
+        top: 59px;
+        left: 194px;
+        box-shadow: 9px -5px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows47 {
+        position: absolute;
+        border-radius: 50%;
+        width: 107px;
+        height: 8px;
+        transform: rotate(343deg);
+        top: 62px;
+        left: 165px;
+        box-shadow: 10px -5px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows48 {
+        position: absolute;
+        border-radius: 50%;
+        width: 92px;
+        height: 5px;
+        transform: rotate(354deg);
+        top: 67px;
+        left: 188px;
+        box-shadow: -9px -2px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows49 {
+        position: absolute;
+        border-radius: 50%;
+        width: 60px;
+        height: 7px;
+        transform: rotate(7deg);
+        top: 182px;
+        left: 228px;
+        box-shadow: -1px -4px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows50 {
+        position: absolute;
+        border-radius: 50%;
+        width: 15px;
+        height: 114px;
+        transform: rotate(29deg);
+        top: 147px;
+        left: 313px;
+        box-shadow: -6px -12px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows51 {
+        position: absolute;
+        border-radius: 50%;
+        width: 11px;
+        height: 41px;
+        transform: rotate(1deg);
+        top: 214px;
+        left: 397px;
+        box-shadow: -5px -12px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows52 {
+        position: absolute;
+        border-radius: 50%;
+        width: 9px;
+        height: 44px;
+        transform: rotate(11deg);
+        top: 212px;
+        left: 399px;
+        box-shadow: -3px -12px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows53 {
+        position: absolute;
+        border-radius: 50%;
+        width: 5px;
+        height: 37px;
+        transform: rotate(203deg);
+        top: 207px;
+        left: 405px;
+        box-shadow: 5px -2px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows54 {
+        position: absolute;
+        border-radius: 50%;
+        width: 11px;
+        height: 37px;
+        transform: rotate(94deg);
+        top: 165px;
+        left: 247px;
+        box-shadow: -6px -2px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows55 {
+        position: absolute;
+        border-radius: 50%;
+        width: 7px;
+        height: 42px;
+        transform: rotate(261deg);
+        top: 154px;
+        left: 222px;
+        box-shadow: -3px 18px var(--hair-shadow);
+        z-index: 14;
+      }
+      .hair-shadows56 {
+        position: absolute;
+        border-radius: 50%;
+        width: 9px;
+        height: 23px;
+        transform: rotate(189deg);
+        top: 183px;
+        left: 466px;
+        box-shadow: -1px -16px var(--hair-shadow);
+        z-index: 14;
+      }
 
 
 
 
 
+
+/* ACHI */
+
+
+
+
+
+
+
+
+      .hair-fill-final1 {
+        position: absolute;
+        border-radius: 50%;
+        width: 55px;
+        height: 6px;
+        transform: rotate(288deg);
+        top: 236px;
+        left: 272px;
+        box-shadow: 10px -5px var(--hair-light);
+        z-index: 14;
+      }
+      .hair-fill-final2 {
+        position: absolute;
+        border-radius: 50%;
+        width: 18px;
+        height: 4px;
+        transform: rotate(255deg);
+        top: 228px;
+        left: 363px;
+        box-shadow: 9px -3px var(--hair-light);
+        z-index: 14;
+      }
+      .hair-fill-final3 {
+        position: absolute;
+        border-radius: 50%;
+        width: 20px;
+        height: 3px;
+        transform: rotate(299deg);
+        top: 237px;
+        left: 450px;
+        box-shadow: 12px 2px var(--hair-light);
+        z-index: 14;
+      }
+      .hair-fill-final4 {
+        position: absolute;
+        border-radius: 50%;
+        width: 21px;
+        height: 4px;
+        transform: rotate(81deg);
+        top: 224px;
+        left: 384px;
+        box-shadow: 13px 2px var(--hair-light);
+        z-index: 14;
+      }
+      .hair-fill-final5 {
+        position: absolute;
+        border-radius: 50%;
+        width: 20px;
+        height: 5px;
+        transform: rotate(290deg);
+        top: 247px;
+        left: 382px;
+        box-shadow: 12px 2px var(--hair-dark);
+        z-index: 14;
+      }
 
       :root {
         --skin-light: #FF6C00;
@@ -9572,7 +10302,8 @@
         --eyes-dark: black;
         --brows: black;
         --hair-light: #15181e;
-        --hair-dark: #0c0b10;
+        --hair-dark: #0C0B0F; /*#0c0b10;*/
+        --hair-shadow: #1E1E22;
         --bg-color: #FD6502;
         --clothes-out1: #ff8600;
         --clothes-out2: #ffb332;
@@ -10056,6 +10787,8 @@
         <div class="brows-filler8"></div>
         <div class="brows-filler9"></div>
         <div class="brows-filler10"></div>
+        <div class="brows-filler11"></div>
+        <div class="brows-filler12"></div>
       </div>
 
     </div>
@@ -10240,6 +10973,8 @@
         <div class="r-arm-shadows22"></div>
         <div class="r-arm-shadows23"></div>
         <div class="r-arm-shadows24"></div>
+        <div class="r-arm-shadows25"></div>
+        <div class="r-arm-shadows26"></div>
       </div>
 
       <div class="clothes-out-shadows">
@@ -10536,13 +11271,85 @@
         <div class="ear-shadows18"></div>
         <div class="ear-shadows19"></div>
         <div class="ear-shadows20"></div>
+        <div class="ear-shadows21"></div>
+      </div>
+
+    </div>
+
+    <div class="final-extras">
+      <div class="hair-fill-final">
+        <div class="hair-fill-final1"></div>
+        <div class="hair-fill-final2"></div>
+        <div class="hair-fill-final3"></div>
+        <div class="hair-fill-final4"></div>
+        <div class="hair-fill-final5"></div>
       </div>
 
       <div class="hair-shadows">
+        <div class="hair-shadows1"></div>
+        <div class="hair-shadows2"></div>
+        <div class="hair-shadows3"></div>
+        <div class="hair-shadows4"></div>
+        <div class="hair-shadows5"></div>
+        <div class="hair-shadows6"></div>
+        <div class="hair-shadows7"></div>
+        <div class="hair-shadows8"></div>
+        <div class="hair-shadows9"></div>
+        <div class="hair-shadows10"></div>
+        <div class="hair-shadows11"></div>
+        <div class="hair-shadows12"></div>
+        <div class="hair-shadows13"></div>
+        <div class="hair-shadows14"></div>
+        <div class="hair-shadows15"></div>
+        <div class="hair-shadows16"></div>
+        <div class="hair-shadows17"></div>
+        <div class="hair-shadows18"></div>
+        <div class="hair-shadows19"></div>
+        <div class="hair-shadows20"></div>
+        <div class="hair-shadows21"></div>
+        <div class="hair-shadows22"></div>
+        <div class="hair-shadows23"></div>
+        <div class="hair-shadows24"></div>
+        <div class="hair-shadows25"></div>
+        <div class="hair-shadows26"></div>
+        <div class="hair-shadows27"></div>
+        <div class="hair-shadows28"></div>
+        <div class="hair-shadows29"></div>
+        <div class="hair-shadows30"></div>
+        <div class="hair-shadows31"></div>
+        <div class="hair-shadows32"></div>
+        <div class="hair-shadows33"></div>
+        <div class="hair-shadows34"></div>
+        <div class="hair-shadows35"></div>
+        <div class="hair-shadows36"></div>
+        <div class="hair-shadows37"></div>
+        <div class="hair-shadows38"></div>
+        <div class="hair-shadows39"></div>
+        <div class="hair-shadows40"></div>
+        <div class="hair-shadows41"></div>
+        <div class="hair-shadows42"></div>
+        <div class="hair-shadows43"></div>
+        <div class="hair-shadows44"></div>
+        <div class="hair-shadows45"></div>
+        <div class="hair-shadows46"></div>
+        <div class="hair-shadows47"></div>
+        <div class="hair-shadows48"></div>
+        <div class="hair-shadows49"></div>
+        <div class="hair-shadows50"></div>
+        <div class="hair-shadows51"></div>
+        <div class="hair-shadows52"></div>
+        <div class="hair-shadows53"></div>
+        <div class="hair-shadows54"></div>
+        <div class="hair-shadows55"></div>
+        <div class="hair-shadows56"></div>
+        <div class="hair-shadows57"></div>
+        <div class="hair-shadows58"></div>
+        <div class="hair-shadows59"></div>
+        <div class="hair-shadows60"></div>
       </div>
     </div>
 
-    <div class="just-click">
+    <div class="just-click" style="display:none;">
       <span>Just click</span>
     </div>
     <script>
@@ -10551,9 +11358,11 @@
       var set1 = Array.from(document.getElementsByClassName('main')[0].children);
       var set2 = Array.from(document.getElementsByClassName('fillers')[0].children);
       var set3 = Array.from(document.getElementsByClassName('shadows')[0].children);
+      var set4 = Array.from(document.getElementsByClassName('final-extras')[0].children);
 
       all_els = set1.concat(set2);
       all_els = all_els.concat(set3);
+      all_els = all_els.concat(set4);
 
       var all_sub_els = [];
       for(var i=0; i<all_els.length; i++) {

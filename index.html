@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Hello, I am Goku</title>
     <style>
@@ -12,6 +13,30 @@
         /* height: 100vh; */
         height: 750px;
         background-color: #fff;
+      }
+      .just-click {
+        position: absolute;
+        transform: translateX(-50%);
+        top: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 440px;
+        height: 70px;
+        border: 2px solid lightgray;
+        border-radius: 10px;
+        filter: drop-shadow(0 0 0.2em rgba(0,0,0,0.7));
+        font-size: 22px;
+        font-family: "Copperplate", fantasy;
+      }
+      .just-click-gone {
+        animation-name: byebye;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes byebye {
+        from {top: 50%;}
+        to {top: -50%;}
       }
       .img-overlay {
         position: absolute;
@@ -10139,6 +10164,9 @@
       </div>
     </div>
 
+    <div>
+      <a class="just-click">Just click somewhere, I am bored</a>
+    </div>
     <script>
       var all_els = [];
 
@@ -10165,11 +10193,13 @@
 
       var started_anim = false;
       var counter = 0;
+      var just_click = document.getElementsByClassName('just-click')[0];
       document.onkeydown = function (e) {
+        if (!just_click.classList.contains("just-click-gone")) just_click.classList.add("just-click-gone");
         if (started_anim) return;
         if (counter===0 && e.keyCode === 37) return;
         if (counter===all_sub_els.length  && e.keyCode === 39) return;
-console.log(counter);
+
         if(e.keyCode === 37) {
           counter --;
           all_sub_els[counter].style.display = 'none';
@@ -10181,22 +10211,20 @@ console.log(counter);
         }
       };
       document.onclick = function (e) {
+        if (!just_click.classList.contains("just-click-gone")) just_click.classList.add("just-click-gone");
         if (started_anim) return;
 
-        // if(counter===all_sub_els.length-1) {
-          counter = 0;
+        counter = 0;
 
-          console.log(all_sub_els)
-          for(var i=0; i<all_sub_els.length; i++) {
-              all_sub_els[i].style.display = 'none';
-          }
-        // }
+        console.log(all_sub_els)
+        for(var i=0; i<all_sub_els.length; i++) {
+            all_sub_els[i].style.display = 'none';
+        }
 
         started_anim = true;
 
         for(var i=0; i<all_sub_els.length; i++) {
           setTimeout(function(curr) {
-            console.log(curr);
             all_sub_els[curr].style.display = 'block';
             counter = curr;
 

@@ -16,17 +16,22 @@
       .just-click {
         position: absolute;
         transform: translateX(-50%);
-        top: 50%;
+        /* top: 50%; */
         left: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid lightgray;
+        /* border: 2px solid lightgray; */
         border-radius: 10px;
         filter: drop-shadow(0 0 0.2em rgba(0,0,0,0.7));
         font-size: 22px;
         font-family: "Copperplate", fantasy;
         padding: 20px 40px;
+        flex-direction: column;
+        gap:10px;
+      }
+      .just-click::after {
+        content: 'Click';
       }
       .just-click-gone {
         animation-name: byebye;
@@ -11349,9 +11354,13 @@
       </div>
     </div>
 
-    <div class="just-click" style="display:none;">
-      <span>Just click</span>
+    <div class="just-click">
+      <img width=100 src="symbol.png"></img>
     </div>
+
+    <!-- <div class="just-click" style="display:none;">
+      <span>Just click</span>
+    </div> -->
     <script>
       var all_els = [];
 

@@ -12,6 +12,7 @@
         /* height: 100vh; */
         height: 750px;
         background-color: #fff;
+        overflow: hidden;
       }
       .just-click {
         position: absolute;
@@ -10326,6 +10327,36 @@
         --skin05: #ffd6c0;
         --skin06: #ffb596;
       }
+
+      .loader {
+        display: none;
+        position: absolute;
+        top: 20px;
+        width: 90%;
+        z-index: 999999999999999;
+        transform: translateX(-50%);
+        left:50%;
+      }
+      .loader-outer {
+        position:absolute;
+        background-color: white;
+        width: 100%;
+        height: 8px;
+        border: 1px solid black;
+      }
+      .loader-inner {
+        position:absolute;
+        height: 10px;
+        background-color: black;
+        padding-left:1px;
+      }
+      .loader-text {
+        position: absolute;
+        top: 14px;
+        transform: translateX(-50%);
+        left:50%;
+        font-size: 12px;
+      }
     </style>
   </head>
   <body>
@@ -11361,7 +11392,17 @@
     <!-- <div class="just-click" style="display:none;">
       <span>Just click</span>
     </div> -->
+
+    <div class="loader">
+      <div class="loader-outer"></div>
+      <div class="loader-inner"></div>
+      <div class="loader-text"></div>
+    </div>
+
     <script>
+      var loader_div = document.getElementsByClassName('loader')[0];
+      var loader = document.getElementsByClassName('loader-inner')[0];
+      var loader_text = document.getElementsByClassName('loader-text')[0];
       var all_els = [];
 
       var set1 = Array.from(document.getElementsByClassName('main')[0].children);
@@ -11412,21 +11453,27 @@
 
         counter = 0;
 
-        console.log(all_sub_els)
+        // console.log(all_sub_els)
         for(var i=0; i<all_sub_els.length; i++) {
             all_sub_els[i].style.display = 'none';
         }
 
+        loader_div.style.display = 'block';
         started_anim = true;
 
         for(var i=0; i<all_sub_els.length; i++) {
           setTimeout(function(curr) {
+            // loader
+            loader.style.width = (curr * 100 / all_sub_els.length) + "%";
+            loader_text.innerHTML = 'CSS painting ' + all_sub_els[curr].className;
+
             all_sub_els[curr].style.display = 'block';
             counter = curr;
 
             if(counter === all_sub_els.length-1) {
               started_anim = false;
               counter ++;
+              loader_div.style.display = 'none';
             }
           }, 40*i, i);
 

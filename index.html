@@ -16,9 +16,9 @@
       }
       .just-click {
         position: absolute;
-        transform: translateX(-50%);
-        /* top: 50%; */
-        left: 50%;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left:50%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -42,6 +42,15 @@
       @keyframes byebye {
         from {top: 50%;}
         to {top: -50%;}
+      }
+      .just-click-come {
+        animation-name: hihi;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes hihi {
+        from {top: -50%;}
+        to {top: 50%;}
       }
       .img-overlay {
         position: absolute;
@@ -11400,9 +11409,13 @@
     </div>
 
     <script>
+      var just_click = document.getElementsByClassName('just-click')[0];
       var loader_div = document.getElementsByClassName('loader')[0];
       var loader = document.getElementsByClassName('loader-inner')[0];
       var loader_text = document.getElementsByClassName('loader-text')[0];
+
+      just_click.classList.add('just-click-come');
+
       var all_els = [];
 
       var set1 = Array.from(document.getElementsByClassName('main')[0].children);
@@ -11430,10 +11443,12 @@
 
       var started_anim = false;
       var counter = 0;
-      var just_click = document.getElementsByClassName('just-click')[0];
       document.onkeydown = function (e) {
         if (e.keyCode !== 37 && e.keyCode !== 39) return;
-        if (!just_click.classList.contains("just-click-gone")) just_click.classList.add("just-click-gone");
+        if (!just_click.classList.contains("just-click-gone")) {
+          just_click.classList.remove('just-click-come');
+          just_click.classList.add("just-click-gone");
+        }
         if (started_anim) return;
         if (counter===0 && e.keyCode === 37) return;
         if (counter===all_sub_els.length  && e.keyCode === 39) return;
@@ -11448,7 +11463,10 @@
         }
       };
       document.onclick = function (e) {
-        if (!just_click.classList.contains("just-click-gone")) just_click.classList.add("just-click-gone");
+        if (!just_click.classList.contains("just-click-gone")) {
+          just_click.classList.remove('just-click-come');
+          just_click.classList.add("just-click-gone");
+        }
         if (started_anim) return;
 
         counter = 0;

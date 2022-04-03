@@ -11432,6 +11432,7 @@
       var counter = 0;
       var just_click = document.getElementsByClassName('just-click')[0];
       document.onkeydown = function (e) {
+        if (e.keyCode !== 37 && e.keyCode !== 39) return;
         if (!just_click.classList.contains("just-click-gone")) just_click.classList.add("just-click-gone");
         if (started_anim) return;
         if (counter===0 && e.keyCode === 37) return;
@@ -11442,7 +11443,6 @@
           all_sub_els[counter].style.display = 'none';
         }
         if(e.keyCode === 39) {
-          // console.log(all_sub_els[counter]);
           all_sub_els[counter].style.display = 'block';
           counter ++;
         }
@@ -11453,7 +11453,6 @@
 
         counter = 0;
 
-        // console.log(all_sub_els)
         for(var i=0; i<all_sub_els.length; i++) {
             all_sub_els[i].style.display = 'none';
         }
